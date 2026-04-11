@@ -15,15 +15,11 @@ To understand the underlying structure of the census data, we applied:
 * **K-Means & Hierarchical Clustering:** Grouping individuals into clusters based on occupation, education, and age.
 * **Principal Component Analysis (PCA):** Reducing the dataset's dimensionality for better visualization and more efficient computation.
 
-## Key Technical Skills
-* **Feature Engineering:** Handling categorical variables and scaling numerical features using `StandardScaler`.
-* **Model Evaluation:** Using Confusion Matrices, ROC Curves, and Precision-Recall metrics to ensure model reliability.
-* **Data Visualization:** Extensive use of `Seaborn` and `Matplotlib` for exploratory data analysis (EDA).
-## Conclusion
-Through rigorous experimentation with both supervised and unsupervised learning techniques, the project yielded the following insights:
-• Best Performing Model: Logistic Regression emerged as the top-performing classifier, demonstrating the highest overall accuracy and a more balanced confusion matrix compared to other models.
-• Model Comparison: While SVM (RBF Kernel) showed superior capability in identifying the minority class (>50K), Gaussian Naive Bayes was less effective due to a high number of false positives.
-• Data Insights: The unsupervised learning phase (K-Means & PCA) successfully captured underlying demographic clusters, proving that high-income patterns are strongly correlated with specific education and occupation features.
+## Conclusion & Final Insights
+
+* Model Performance: Logistic Regression emerged as the best overall classifier due to its high accuracy and stability. However, RBF SVM proved superior in identifying the minority class (`>50K`) more effectively.
+* Evaluation Basis: Model reliability was validated using Confusion Matrices and ROC-AUC for supervised learning, and Silhouette Scores to ensure distinct and meaningful clusters in unsupervised learning.
+* Data Visualization: Through Seaborn and Matplotlib, complex patterns were simplified using Heatmaps and PCA 2D plots, revealing that education and occupation are the strongest predictors of income level.
 
 ## Tech Stack
 * **Language:** Python 
