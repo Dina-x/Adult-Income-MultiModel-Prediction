@@ -19,6 +19,11 @@ To understand the underlying structure of the census data, we applied:
 * **Feature Engineering:** Handling categorical variables and scaling numerical features using `StandardScaler`.
 * **Model Evaluation:** Using Confusion Matrices, ROC Curves, and Precision-Recall metrics to ensure model reliability.
 * **Data Visualization:** Extensive use of `Seaborn` and `Matplotlib` for exploratory data analysis (EDA).
+## Conclusion
+Through rigorous experimentation with both supervised and unsupervised learning techniques, the project yielded the following insights:
+• Best Performing Model: Logistic Regression emerged as the top-performing classifier, demonstrating the highest overall accuracy and a more balanced confusion matrix compared to other models.
+• Model Comparison: While SVM (RBF Kernel) showed superior capability in identifying the minority class (>50K), Gaussian Naive Bayes was less effective due to a high number of false positives.
+• Data Insights: The unsupervised learning phase (K-Means & PCA) successfully captured underlying demographic clusters, proving that high-income patterns are strongly correlated with specific education and occupation features.
 
 ## Tech Stack
 * **Language:** Python 
